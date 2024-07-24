@@ -1,0 +1,241 @@
+/* Existing styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: lawngreen;
+    color: rgb(15, 2, 2);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* Ensure it stays on top of other content */
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+    display: flex;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    padding: 5px;
+}
+
+.search-bar button {
+    padding: 5px;
+    background-color: #febd69;
+    border: none;
+    cursor: pointer;
+}
+
+.user-menu span {
+    margin: 0 10px;
+}
+
+nav {
+    background-color: lawngreen;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.banner {
+    background-color: lemonchiffon;
+    padding: 20px;
+    text-align: center;
+}
+
+.banner h1 {
+    margin: 0;
+}
+
+.deals {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.deal-item {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    text-align: center;
+    width: calc(25% - 20px);
+    height: auto;
+    display: inline-block;
+}
+
+.deal-item h2 {
+    font-size: 18px;
+}
+
+.deal-item img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+.deal-item a {
+    display: block;
+    margin-top: 10px;
+    color: #0073bb;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.deal-item a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+    .deal-item {
+        width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .deal-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .deal-item {
+        width: calc(100% - 20px);
+    }
+}
+
+@media (min-width: 1201px) {
+    .deal-item:nth-child(-n+4) {
+        width: calc(25% - 20px);
+    }
+}
+
+/* Footer styles */
+footer {
+    background-color: lawngreen;
+    color: rgb(15, 2, 2);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-section {
+    margin: 10px 0;
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    color: rgb(15, 2, 2);
+}
+
+.footer-section p,
+.footer-section a {
+    margin: 5px 0;
+    color: rgb(15, 2, 2);
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        max-width: none;
+    }
+}
+
+/*cart checkout css*/
+
+/* Add this to your existing CSS */
+
+/* Modal styles */
+.cart-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.cart-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Buy & Sell</title>
+    <link rel="stylesheet" href="easy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="logo">Easy Buy & Sell</div>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search Easy Buy & Sell">
+                <button id="search-btn">🔍</button>
+            </div>
+            <div class="user-menu">
+                <span>Hello, Sign in</span>
+                <span id="cart-btn" class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)
+                </span>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li>All</li>
+                <li>Today's Deals</li>
+                <li>Customer Service</li>
+                <li>Registry</li>
+                <li>Gift Cards</li>
+                <li>Sell</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <h1>Easy Buy & Sell</h1>
+        </section>
+        <section class="deals" id="deals">
+            <div class="deal-item" data-id="1">
+                <h2>Deals in PCs</h2>
+                <img src="src/pc.jpg" alt="PC Deals">
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="deal-item" data-id="2">
+                <h2>Plastic Mannequin</h2>
+                <img src="src/mannequin-2.jpg" alt="Plastic Mannequin">
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="deal-item" data-id="3">
+                <h2>Joystick</h2>
+                <img src="src/joystick.png" alt="Joystick">
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="deal-item" data-id="4">
+                <h2>Gaming Accessories</h2>
+                <img src="src/gaming.jpg" alt="Gaming Accessories">
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="deal-item" data-id="5">
+                <h2>Best Laptops</h2>
+                <img src="src/laptop.jpg" alt="Best Laptops">
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="deal-item" data-id="6">
+                <h2>Gaming Pad</h2>
+                <img src="src/gm.png" alt="Gaming Pad">
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="deal-item" data-id="7">
+                <h2>Jewelry</h2>
+                <img src="src/jewelry.jpg" alt="Jewelry">
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="deal-item" data-id="8">
+                <h2>Sun Glasses</h2>
+                <img src="src/accessory.jpg" alt="Sun Glasses">
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="deal-item" data-id="9">
+                <h2>Cameo Necklace</h2>
+                <img src="src/cameo.jpg" alt="Cameo Necklace">
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="deal-item" data-id="10">
+                <h2>Camera</h2>
+                <img src="src/camera.jpg" alt="Camera">
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="deal-item" data-id="11">
+                <h2>Pocket Watch</h2>
+                <img src="src/pocket-watch.jpg" alt="Pocket Watch">
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="deal-item" data-id="12">
+                <h2>Fashion Shoes</h2>
+                <img src="src/shoes-2.jpg" alt="Fashion Shoes">
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="deal-item" data-id="13">
+                <h2>Pearl Necklace</h2>
+                <img src="src/necklace p.jpg" alt="Pearl Necklace">
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="deal-item" data-id="14">
+                <h2>Wrist Watch</h2>
+                <img src="src/wristwatch.jpg" alt="Wrist Watch">
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="deal-item" data-id="15">
+                <h2>Mannequin</h2>
+                <img src="src/mannequin.jpg" alt="Mannequin">
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="deal-item" data-id="16">
+                <h2>Cosmetics</h2>
+                <img src="src/cosmetics.jpg" alt="Cosmetics">
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@easybuyandsell.com</p>
+                <p>Phone: +254 791 083 629</p>
+                <p>Address: Likoni Road, Nairobi City, Kenya</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/nicholas.kibet.3538?mibextid=ZbWKwL">Facebook</a><br>
+                <a href="#">Twitter</a><br>
+                <a href="#">Instagram</a>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#">About Us</a><br>
+                <a href="#">Privacy Policy</a><br>
+                <a href="#">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <span class="close">&times;</span>
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <button id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
